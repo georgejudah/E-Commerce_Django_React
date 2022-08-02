@@ -1,0 +1,21 @@
+npx create-react-app frontend
+
+npm start
+
+remove files which we won't use setupTests.js
+        app.css
+        app.test.js
+
+to create components
+create mkdir called components and add Header and Footer Component
+import these components in App.js
+
+make sure to follow file naming conventions
+
+front-end styling - React Bootstrap, https://bootswatch.com/ - Lux theme - download the min from the theme and add inside src and import in index.js file- check the website now
+
+install React Bootstrap
+npm install react-bootstrap (*bootstrap) - exclude this as we're already using the theme
+after installing - import { Container } from 'react-bootstrap' in app.js - this is a destructured import
+
+8/1 - Completed with the min height of main - 80vh
