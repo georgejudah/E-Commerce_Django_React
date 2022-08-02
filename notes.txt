@@ -19,3 +19,14 @@ npm install react-bootstrap (*bootstrap) - exclude this as we're already using t
 after installing - import { Container } from 'react-bootstrap' in app.js - this is a destructured import
 
 8/1 - Completed with the min height of main - 80vh
+
+usage of backslash - https://blog.bitsrc.io/double-quotes-vs-single-quotes-vs-backticks-in-javascript-3cab5aaea55
+In react, when you use the JS map function, there should be an unique key for each item when looping an array
+when passing data to a component, you can either uses props or destructure and use like below
+
+<Product product={product} />
+
+in the Product.js page, function Product({product}) {
+
+
+9/1 - completed at product.js file, next to work on the ratings data on the front end
