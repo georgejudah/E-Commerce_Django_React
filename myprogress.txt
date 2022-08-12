@@ -1,0 +1,59 @@
+npx create-react-app frontend
+
+npm start
+
+remove files which we won't use setupTests.js
+        app.css
+        app.test.js
+
+to create components
+create mkdir called components and add Header and Footer Component
+import these components in App.js
+
+make sure to follow file naming conventions
+
+front-end styling - React Bootstrap, https://bootswatch.com/ - Lux theme - download the min from the theme and add inside src and import in index.js file- check the website now
+
+install React Bootstrap
+npm install react-bootstrap (*bootstrap) - exclude this as we're already using the theme
+after installing - import { Container } from 'react-bootstrap' in app.js - this is a destructured import
+
+8/1 - Completed with the min height of main - 80vh
+
+usage of backslash - https://blog.bitsrc.io/double-quotes-vs-single-quotes-vs-backticks-in-javascript-3cab5aaea55
+In react, when you use the JS map function, there should be an unique key for each item when looping an array
+when passing data to a component, you can either uses props or destructure and use like below
+
+<Product product={product} />
+
+in the Product.js page, function Product({product}) {
+
+
+9/1 - completed at product.js file, next to work on the ratings data on the front end
+
+created Rating.js file and added rating using font awesome, check out the Rating.js file and also added a bit of styling in the index.css file
+
+React and routing - npm install react-router-dom react-router-bootstrap
+
+stuck in implementing react router - component not getting displayed - HomeScreen
+
+13-8-22 - Fixed the react router - I'm using React router V6- So, is different from the tutorial
+Added new component productScreen.js
+
+prexisting         <a href={`/product/${product._id}`}>
+        <Card.Title as="div">
+            <strong>{product.name}</strong>
+        </Card.Title>
+        </a>
+this loads and takes to a new page
+
+so in order to reactivate for react
+replace a with Link and href with to
+
+like this
+        <Link to={`/product/${product._id}`}>
+        <Card.Title as="div">
+            <strong>{product.name}</strong>
+        </Card.Title>
+        </Link>
+        |||ly used https://github.com/react-bootstrap/react-router-bootstrap <LinkContainer> in Header.js
