@@ -57,3 +57,15 @@ like this
         </Card.Title>
         </Link>
         |||ly used https://github.com/react-bootstrap/react-router-bootstrap <LinkContainer> in Header.js
+
+15-8-22
+Completed ProductScreen Page and the styling setup
+since we're using react-router 6, for reading the url parameters
+Reading URL Parameters
+Use :style syntax in your route path and useParams() to read them:
+https://reactrouter.com/docs/en/v6/getting-started/overview#reading-url-parameters
+
+usage in our program
+  const { id } = useParams(); in the ProductScreen component page
+  where in the App.js page,
+  <Route path="/product/:id" element={<ProductScreen/>} />
